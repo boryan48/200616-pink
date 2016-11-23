@@ -1,7 +1,8 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
+
 * Студент: [Максим Борисов](https://up.htmlacademy.ru/adaptive/9/user/200616).
-* Наставник: `Неизвестно`.
+* Наставник: [Новаш Вадим](https://htmlacademy.ru/profile/stakeout)
 
 ---
 
