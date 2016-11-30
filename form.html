@@ -1,100 +1,134 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Пинк</title>
-  </head>
-  <body>
-   
-    <header class="page-header">
-      <div class="page-header__logo">
-        <img src="http://placehold.it/150x100" alt="Лого">
+
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Пинк</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <header class="page-header">
+    <div class="page-header__logo"> <img src="http://placehold.it/150x100" alt="Лого"> </div>
+    <nav class="main-nav  main-nav--closed  main-nav--nojs">
+      <button class="main-nav-toggle" type="button"></button>
+      <div class="main-nav__wrapper">
+        <ul class="main-nav__items">
+          <li class="main-nav__item"><a href="index.html">Главная</a></li>
+          <li class="main-nav__item"><a href="photo.html">Фотографии</a></li>
+          <li class="main-nav__item  main-nav__item--active"><a href="form.html">Конкурс</a></li>
+          <li class="main-nav__item"><a href="https://htmlacademy.ru">HTML Academy</a></li>
+        </ul>
       </div>
-      <nav class="main-nav  main-nav--closed  main-nav--nojs">
-        <button class="main-nav-toggle" type="button"></button>
-        <div class="main-nav__wrapper">
-          <ul class="main-nav__items">
-            <li class="main-nav__item"><a href="index.html">Главная</a></li>
-            <li class="main-nav__item"><a href="photo.html">Фотографии</a></li>
-            <li class="main-nav__item  main-nav__item--active"><a href="form.html">Конкурс</a></li>
-            <li class="main-nav__item"><a href="https://htmlacademy.ru">HTML Academy</a></li>
-          </ul>
-        </div>
-      </nav>
-      <h1 class="header-menu">Конкурс на самое безбашенное путешествие с Пинк</h1>
-    </header>
-    
-    <section class="form-title">
-      <div class="form-title__wrapper  wrapper">
+    </nav>
+    <h1 class="header-menu">Конкурс на самое безбашенное путешествие с Пинк</h1> 
+  </header>
+  
+  <main class="page-content">
+    <section class="user-form">
+      <div class="user-form__wrapper">
+        <p class="user-form__title">Поделитесь своей историей и получите шанс выиграть ценный приз - 1000 миль на вашу бонусну карту!</p>
         <form action="#" method="post">
-          <fieldset class="form-title__block">
-            <legend class="form-title__header">Поделитесь своей историей и получите шанс выиграть ценный приз - 1000 миль на вашу бонусну    карту!</legend>
-            <label class="form-title__lable" for="surname">Фамилия:</label>
-            <input class="form-title__input" id="surname" type="text" placeholder="Укажите фамилию *" required>
-            <label class="form-title__lable" for="name">Имя:</label>
-            <input  class="form-title__input" id="name" type="text" placeholder="Введите ваше имя *" required>
-            <label class="form-title__lable" for="patronymic">Отчество:</label>
-            <input  class="form-title__input" id="patronymic" type="text" placeholder="Ну и отчество тоже">
+         
+          <fieldset class="user-form__groupe">
+            <div class="user-form__text-field">
+              <label class="user-form__lable" for="surname">Фамилия:</label>
+              <input class="user-form__input" id="surname" type="text" placeholder="Укажите фамилию *" required> </div>
+            <div class="user-form__text-field">
+              <label class="user-form__lable" for="name">Имя:</label>
+              <input class="user-form__input" id="name" type="text" placeholder="Введите ваше имя *" required> </div>
+            <div class="user-form__text-field">
+              <label class="user-form__lable" for="patronymic">Отчество:</label>
+              <input class="user-form__input" id="patronymic" type="text" placeholder="Ну и отчество тоже"> </div>
           </fieldset>
-        
-          <fieldset class="form-travels__block">
-            <legend class="form-travels__header">Ваши безбашенные достижения в путешествии</legend>
-            <input class="form-travels__input" id="check1" type="checkbox" checked>
-            <label class="form-travels__label" for="check1">Сделал селфи с акулой</label>
-            <input class="form-travels__input" id="check2" type="checkbox" checked>
-            <label class="form-travels__label" for="check2">Обгорел на пляже</label>
-            <input class="form-travels__input" id="check3" type="checkbox">
-            <label class="form-travels__label" for="check3">Видел Чака Норриса</label>
-            <input class="form-travels__input" id="check4" type="checkbox">
-            <label class="form-travels__label" for="check4">Накупил сувениров</label>
-            <input class="form-travels__input" id="check5" type="checkbox" checked>
-            <label class="form-travels__label" for="check5">Удержал башню</label>
-            <input class="form-travels__input" id="check6" type="checkbox">
-            <label class="form-travels__label" for="check6">Разгромил отель</label>
+          
+          <fieldset class="user-form__groupe">
+            <legend class="user-form__header">Ваши безбашенные достижения в путешествии</legend>
+            <div class="user-form__checkbox">
+              <input class="user-form__input" name="" id="check1" type="checkbox" checked>
+              <label class="user-form__label" for="check1">Сделал селфи с акулой</label>
+            </div>
+            <div class="user-form__checkbox">
+              <input class="user-form__input" name="" id="check2" type="checkbox" checked>
+              <label class="user-form__label" for="check2">Обгорел на пляже</label>
+            </div>
+            <div class="user-form__checkbox">
+              <input class="user-form__input" id="check3" type="checkbox">
+              <label class="user-form__label" for="check3">Видел Чака Норриса</label>
+            </div>
+            <div class="user-form__checkbox">
+              <input class="user-form__input" id="check4" type="checkbox">
+              <label class="user-form__label" for="check4">Накупил сувениров</label>
+            </div>
+            <div class="user-form__checkbox">
+              <input class="user-form__input" id="check5" type="checkbox" checked>
+              <label class="user-form__label" for="check5">Удержал башню</label>
+            </div>
+            <div class="user-form__checkbox">
+              <input class="user-form__input" id="check6" type="checkbox">
+              <label class="user-form__label" for="check6">Разгромил отель</label>
+            </div>
           </fieldset>
-          <fieldset class="form-travels__contact">
-            <label class="form-travels__label" for="number">Номер телефона</label>
-            <input class="form-travels__input" id="number" type="tel" placeholder="Номер, пожалуйста">
-            <label class="form-travels__label" for="email">Адресок почты</label>  
-            <input class="form-travels__input" id="email" type="email" placeholder="Введите почту" required> 
+          
+          <fieldset class="user-form__contact">
+            <div class="user-form__contact-field">
+              <label class="user-form__label" for="number">Номер телефона</label>
+              <input class="user-form__input" id="number" type="tel" placeholder="Номер, пожалуйста"> 
+            </div>
+            <div class="user-form__contact-field">
+              <label class="user-form__label" for="email">Адресок почты</label>
+              <input class="user-form__input" id="email" type="email" placeholder="Введите почту" required> 
+            </div>
           </fieldset>
-        
-          <fieldset class="app-travels__block">
-            <legend class="app-travels__header">С каким приложением путешествовали?</legend>
-            <input class="app-travels__input" name="app" id="ios" type="radio" checked>
-            <label class="app-travels__label" for="ios">Pink для iOS</label>
-            <input class="app-travels__input" name="app" id="android" type="radio">
-            <label class="app-travels__label" for="android">Pink на Android</label>
-            <input class="app-travels__input" name="app" id="windows" type="radio">
-            <label class="app-travels__label" for="windows">Windows Phone</label>
+          
+          <fieldset class="user-form__app">
+            <legend class="user-form__app-title">С каким приложением путешествовали?</legend>
+            <div class="user-form__app-field">
+              <input class="user-form__input" name="app" id="ios" type="radio" checked>
+              <label class="user-form__label" for="ios">Pink для iOS</label>
+            </div>
+            <div class="user-form__app-field">
+              <input class="user-form__input" name="app" id="android" type="radio">
+              <label class="user-form__label" for="android">Pink на Android</label>
+            </div>
+            <div class="user-form__app-field">
+              <input class="user-form__input" name="app" id="windows" type="radio">
+              <label class="user-form__label" for="windows">Windows Phone</label>
+            </div>
           </fieldset>
+          
           <fieldset class="form-emoticons">
             <legend class="form-emoticons__header">Опишите свои эмоции</legend>
-            <textarea class="form-travels__input" name="emoticons" cols="27" rows="11" placeholder="Можно прям в красках, не стесняясь в выражениях">
-            </textarea>
+            <textarea class="user-form__message" name="emoticons" cols="27" rows="11" placeholder="Можно прям в красках, не стесняясь в выражениях"> </textarea>
           </fieldset>
-           
-          <input class="form-btn" type="button" value="Отправить форму">
           
+          <button class="form-btn" type="submit" value="Отправить форму"></button>
         </form>
-        <p class="form-required-fields"><span>*</span> - Обязательные поля</p>
-      </div>
+        
+        <p class="user-form__required-fields"><span>*</span> - Обязательные поля</p>
+        
+      </div>   
     </section>
-    
-    <footer class="page-footer">
-      <div class="page-footer__wrapper  wrapper">
-        <div class="page-footer__logo"></div>
-        <ul class="page-footer__social">
-          <li class="cocial-link"><a href="https://twitter.com/htmlacademy" class="cocial-link-tw">Twitter</a></li>
-          <li class="cocial-link"><a href="https://facebook.com/htmlacademy" class="cocial-link-fb">Facebook</a></li>
-          <li class="cocial-link"><a href="https://youtube.com/htmlacademy" class="cocial-link-ytb">Youtube</a></li>
-        </ul>
-        <p class="page-footer__copyright">
-          Разработано
-          <a class="btn  page-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-        </p>
-      </div>
-    </footer>
-    
-  </body>
+  </main>
+  
+  <footer class="page-footer">
+    <div class="page-footer__wrapper">
+      <p class="page-footer__title">Остались вопросы?</p>
+      <p class="page-footer__title"> Свяжитесь с нами!</p>
+      <ul class="contacts">
+        <li class="contacts__item"><b class="contacts__title">Звоните:</b><a href="tel:+78125556666"><span class="page-footer__contact-hidden">Тел.:</span>+7(812)555-66-66</a>
+          <br> </li>
+        <li class="contacts__item"><b class="contacts__title">Пишите:</b><a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+          <br> </li>
+        <li class="contacts__item"><b class="contacts__title">Приезжайте в гости:</b>
+          <p class="contacts__address">ул.Большая Конюшенная, 19/8</p>
+        </li>
+      </ul>
+    </div>
+    <div class="page-footer__map">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5991043651586!2d30.320894616097!3d59.938794181876254!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1480190062369" width="100%" height="201" frameborder="0" style="border:0"></iframe>
+    </div>
+  </footer>
+</body>
+
 </html>
